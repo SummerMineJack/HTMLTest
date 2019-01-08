@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的第一个HTML标题</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<h1>主标题</h1>
+		<h2>副标题</h2>
+		<hr />
+		<h1>图片引用</h1>
+		<!--HTML注释-->
+		<img src="img/bg.jpg" width="300" height="300" alt="这是图片" />
+		<h1>段落，粗体，斜体，上下标，缩小，加大</h1>
+		<p> <strong>倘若不相离</strong>，<em>泪</em>又为何<small>滴</small> ，<big>季</big>节转变，<sub>故</sub><sup>人</sup>遥隔千里，那时充满双瞳的影，只有在记忆深处追寻，煎熬的路，何处是尽头。拾起长短不一的画笔，用心描绘你弯弯黛眉，不想却深深细细，无一精准。</p>
+		<h1>超链接</h1>
+		<a href="https://www.baidu.com" title="超链接">这是一个超链接，指向百度</a><br />
+		<pre>pre 元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。</pre>
+		<h1>计算机输出标签</h1>
+		<code>计算机输出</code><br>
+		<kbd>键盘输入</kbd><br />
+		<tt>打字机样本</tt><br />
+		<samp>计算机打印样本</samp><br />
+		<var>计算机变量</var>
+		<h1>地址</h1>
+		<address>
+			<!--使用address标签，可以将内容进行斜体表现-->
+			Email:<a href="hjzxzone@163c.com" title="Email for 163">SummerMineJack</a><br />
+			Address:ShangHai<br>
+			China
+		</address>
+		<h1>文字方向</h1>
+		<!--right to left-->
+		<!--left ti rigth-->
+		<p><bdo dir="rtl">这是一段从右向左读的文字内容</bdo></p>
+		<h1>块引用</h1>
+		<p>鲁迅说过:<q>Java是世界上最好的语言，没有之一</q></p>
+		<h1>删除字效果和插入字效果</h1>
+		<p>公司网络真的<del>垃圾</del><ins>好</ins></p>
+		<h1>头部信息</h1>
+		1，title是整个页面的标题 <br>
+		2，base是指当前页面中所有的超链接进行相对地址，类似于root。例如， base href="https://www.baidu.com" <br>
+		所以，在当前页面中的图片，超链接等都可以使用相对路径，最后在访问页面时，会变成绝对路径 <br>
+		3，meta使用
+		<meta> 元素来描述HTML文档的描述，关键词，作者，字符集等。
+		<h1>HTML CSS</h1>
+		<p id="htmlCssStyle">这是一段文字进行样式处理</p>
+		<h1>HTML 表格</h1>
+		<p id="tablestyle">无边框表格</p>
+		<table>
+			<tr>
+				<td>1行1列</td>
+				<td>1行2列</td>
+			</tr>
+			<tr>
+				<td>2行1列</td>
+				<td>2行2列</td>
+			</tr>
+		</table>
+		<p id="tablestyle">表格Heading</p>
+		<table>
+			<th>测试头部1</th>
+			<th>测试头部2</th>
+			<tr>
+				<td>1行1列</td>
+				<td>1行2列</td>
+			</tr>
+			<tr>
+				<td>2行1列</td>
+				<td>2行2列</td>
+			</tr>
+		</table>
+		<p id="tablestyle">带有标题的表格</p>
+		<table>
+			<caption>表格的标题</caption>
+			<th>测试头部1</th>
+			<th>测试头部2</th>
+			<tr>
+				<td>1行1列</td>
+				<td>1行2列</td>
+			</tr>
+			<tr>
+				<td>2行1列</td>
+				<td>2行2列</td>
+			</tr>
+		</table>
+		<p id="tablestyle">跨行或者跨列的表格</p>
+		<table border="1">
+			<tr>
+				<th>Name</th>
+				<th colspan="2">Telephone</th>
+			</tr>
+			<tr>
+				<td>Bill Gates</td>
+				<td>555 77 854</td>
+				<td>555 77 855</td>
+			</tr>
+		</table>
+		<table border="1">
+			<tr>
+				<th>First Name:</th>
+				<td>Bill Gates</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Telephone:</th>
+				<td>555 77 854</td>
+			</tr>
+			<tr>
+				<td>555 77 855</td>
+			</tr>
+		</table>
+		<h1>列表</h1>
+		<p id="tablestyle">无序列表</p>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ul>
+		<p id="tablestyle">有序列表</p>
+		<ol>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ol>
+		<p id="tablestyle"> 自定义列表</p>
+		<dl>
+			<dt>父目录</dt>
+			<dd>子目录</dd>
+			<dt>父目录</dt>
+			<dd>子目录</dd>
+		</dl>
+		<h1>HTML div span</h1>
+		<div style="background-color: #FF0000; width: 300px;">
+			<font> This is div </font>
+		</div>
+		<span style="background-color: #D2691E;width: 300px;">
+			<h1>This is span</h1>
+		</span>
+		<h1>HTML布局</h1>
+		<!-- 使用div进行html布局 -->
+		<div style="width: 400px;">
+			<div style="background-color: aquamarine;">
+				<h1 style="margin-bottom: 0;">网页的头部</h1>
+			</div>
+			<div style="width: 100px; float: left; background-color: brown;height: 200px;">
+				<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+					<!-- 可选择菜单 -->
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="#">1菜单1</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">2菜单2</a>
+						</li>
+					</ul>
+					<!-- 取消菜单 -->
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="#sheet1"><b>3取消</b></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="width: 300px; background-color: aqua;float: left;height: 200px;">
+				内容在这里
+			</div>
+			<div id="footer" style="background-color:#FFA500;text-align:center;">
+				版权 © runoob.com</div>
+		</div>
+		<h1>HTML之表单</h1>
+		<form>
+			用户名：<input type="text" id="username" name="username" placeholder="请输入用户名" /><br>
+			密　码：<input type="password" id="password" name="password" placeholder="请输入密码" />
+			单选按钮:<input type="radio" name="sex" value="male" checked="checked" />男
+			<input type="radio" name="sex" value="female" />女<br />
+			复选框:<input type="checkbox" name="cars" value="bicycle" />自行车
+			<input type="checkbox" name="cars" value="bus" />小轿车
+
+			<input type="submit" value="提交" />
+		</form>
+		<h1>HTML 框架</h1>
+		<iframe src="OtherTest.html" name="iframes" width="300" height="200" frameborder="0"></iframe>
+		<a href="https://www.baidu.com" target="iframes">将这个超链接在iframe中打开</a>
+		<h1>HTML 颜色值</h1>
+		此处省略
+		<h1>HTML 颜色名</h1>
+		此处省略
+		<h1>HTML 脚本 (script)</h1>
+		<p id="html script">aaa</p>
+		<script>
+			document.getElementById("html script").innerText = "使用JavaScript插入的内容";
+		</script>
+		<noscript>抱歉，您的浏览器不支持JavaScript</noscript>
+		<h1>HTML 字符实体</h1>
+		空格："&nbsp;" <br />
+		大于号：&gt; <br />
+		小于号： &lt;
+		<h1>HTML 统一资源定位符</h1>
+		https://www.baidu.com <br />
+		scheme://host.domain:port/path/filename
+		
+	</body>
+
+</html>
