@@ -123,3 +123,127 @@ th,
 td {
 	border: 1px cadetblue solid;
 }
+
+.custormTable {
+	height: 200px;
+	width: 100%;
+	font-family: "times new roman"times serif;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.custormTable th {
+	background-color: cadetblue;
+	font: "arial narrow"times sans-serif;
+	color: white;
+}
+
+.custormTable tr.alt td {
+	color: #5F9EA0;
+	background-color: aquamarine;
+}
+
+.custormTable caption {
+	color: #0000FF;
+	caption-side: top;
+	margin-bottom: 10px;
+}
+
+.boxmodel {
+	background-color: #5F9EA0;
+	border: 25px solid #00FF00;
+	padding: 25px;
+	margin: 25px;
+}
+
+label {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+label.borderStyle1 {
+	border: 1px solid black;
+}
+
+label.borderStyle2 {
+	border-bottom-style: solid;
+}
+
+label.borderStyle3 {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+label.borderStyle4 {
+	background-color: #5F9EA0;
+	border-left-width: 22px;
+	border-left-style: solid;
+	border-left-color: #0000FF;
+}
+
+label.none {
+	border-style: none;
+}
+
+label.dotted {
+	border-style: dotted;
+}
+
+label.dashed {
+	border-style: dashed;
+}
+
+label.solid {
+	border-style: solid;
+}
+
+label.double {
+	border-style: double;
+}
+
+label.groove {
+	border-style: groove;
+}
+
+label.ridge {
+	border-style: ridge;
+}
+
+label.inset {
+	border-style: inset;
+}
+
+label.outset {
+	border-style: outset;
+}
+
+label.hidden {
+	border-style: hidden;
+}
+
+label.outline1 {
+	border: 1px solid black;
+	outline: #0000FF dotted thick;
+}
+
+label.margin {
+	border: 1px solid black;
+	margin: 25px 10px 10px 5px;
+}
+
+label.paddings {
+	border: 1px solid black;
+	padding: 10px 5px 15px 20px;
+}
+
+label.fenzu1,
+label.fenzu2,
+label.fenzu3 {
+	background-color: green;
+}
+
+label.qiantao {
+	background-color: #00FF00;
+}
