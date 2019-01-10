@@ -158,7 +158,6 @@ td {
 
 label {
 	display: inline-block;
-	text-align: center;
 	width: 100%;
 	margin-bottom: 30px;
 }
@@ -247,6 +246,52 @@ label.fenzu3 {
 label.qiantao {
 	background-color: #00FF00;
 }
-label.visiblity{
+
+label.visiblity {
 	visibility: hidden;
+}
+
+label.display {
+	display: none;
+}
+
+span.block {
+	display: block;
+}
+
+span.inline {
+	display: inline;
+}
+
+
+label.position_static {
+	position: static;
+	border: 1px black solid;
+}
+
+label.position_fixed {
+	top: 90%;
+	position: fixed;
+	width: 100%;
+	border: 1px black solid;
+}
+
+label.position_relative {
+	position: relative;
+	top: 70%;
+	left: -20px;
+	border: 1px black solid;
+}
+
+label.position_absolute {
+	top: 75%;
+	border: 1px black solid;
+}
+
+div.position_sticky {
+	position: sticky;
+	top: 0;
+	background-color: green;
+	border: 2px solid #4CAF50;
+	position: -webkit-sticky; /* Safari */
 }
