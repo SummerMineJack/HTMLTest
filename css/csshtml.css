@@ -293,5 +293,4 @@ div.position_sticky {
 	top: 0;
 	background-color: green;
 	border: 2px solid #4CAF50;
-	position: -webkit-sticky; /* Safari */
 }
