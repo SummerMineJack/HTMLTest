@@ -149,11 +149,11 @@
 		<span lang="inline">具有块元素的换行特性</span><span lang="inline">具有块元素的换行特性</span>
 		<h1>CSS Position定位</h1>
 		<label class="position_static">css static定位，默认定位</label>
-		<label class="position_fixed">fixed元素的位置相对于浏览器窗口是固定位置。即使窗口是滚动的它也不会移动,需要指定其位置</label>
+		<label class="position_fixed" style="visibility: hidden;">fixed元素的位置相对于浏览器窗口是固定位置。即使窗口是滚动的它也不会移动,需要指定其位置</label>
 		<label class="position_relative">relative 相对定位元素的定位是相对其正常位置。</label>
 		<label class="position_absolute">绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于html</label>
 		<div class="position_sticky">我是粘性定位!</div>
-		<div style="padding-bottom:2000px">
+		<div>
 			<p>滚动我</p>
 			<p>来回滚动我</p>
 			<p>滚动我</p>
@@ -161,5 +161,37 @@
 			<p>滚动我</p>
 			<p>来回滚动我</p>
 		</div>
+		<div>
+			<img class="above_picture" src="../img/bg.jpg" width="300" height="300">
+			<p>这段文字是覆盖在图片之上的</p>
+		</div>
+		<p>请把鼠标移动到单词上，可以看到鼠标指针发生变化：</p>
+		<label style="cursor:auto">auto</label><br>
+		<label style="cursor:crosshair">crosshair</label><br>
+		<label style="cursor:default">default</label><br>
+		<label style="cursor:e-resize">e-resize</label><br>
+		<label style="cursor:help">help</label><br>
+		<label style="cursor:move">move</label><br>
+		<label style="cursor:n-resize">n-resize</label><br>
+		<label style="cursor:ne-resize">ne-resize</label><br>
+		<label style="cursor:nw-resize">nw-resize</label><br>
+		<label style="cursor:pointer">pointer</label><br>
+		<label style="cursor:progress">progress</label><br>
+		<label style="cursor:s-resize">s-resize</label><br>
+		<label style="cursor:se-resize">se-resize</label><br>
+		<label style="cursor:sw-resize">sw-resize</label><br>
+		<label style="cursor:text">text</label><br>
+		<label style="cursor:w-resize">w-resize</label><br>
+		<label style="cursor:wait">wait</label><br>
+		<h1>CSS overflow</h1>
+		<div class="ouverflowText">
+			<p><strong style="color: #00FF00;">需要指定高度 </strong>
+				这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+			<p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+			<p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+			<p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+		</div>
+		<h1>CSS Float 浮动</h1>
+		<img src="../img/bg.jpg" width="250" height="250"  class="floats" >
 	</body>
 </html>
