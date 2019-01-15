@@ -311,6 +311,148 @@ div.ouverflowText {
 	/* overflow: visible; //设置div内容为自动超出可见 */
 	width: 100%;
 }
-img.floats{
-	float: right;
+
+img.floats {
+	/* float: right; */
 }
+
+div.css_vertical {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+	border: 1px solid #00FF00;
+}
+
+/* 后代选择使用：空格【 】 */
+div.css_choose_child span {
+	color: #0000FF;
+	border: 1px solid #000000;
+}
+
+/* 子元素选择器；大于号【>】 */
+div.css_choose_child_for_someone>p {
+	color: #0000FF;
+}
+
+/* 子元素选择器：大于号【>】 */
+div.css_choose_child_for_someone>h2 {
+	color: #00FF00;
+}
+
+/* 相邻兄弟选择器：加号【+】 */
+div.css_choose_child_for_someone_current+p {
+	color: #5F9EA0;
+}
+
+/* 后续兄弟选择器：波浪号【~】 */
+div.css_choose_child_fater~p {
+	color: #FFA500;
+}
+
+/* a标签的伪类使用 */
+a.css_anchor:link {
+	color: #FF0000;
+}
+
+a.css_anchor:hover {
+	color: chocolate
+}
+
+div.css_fist_child_anchor:first-child {
+	color: red;
+}
+
+p.custormLine:first-line {
+	color: #0000FF;
+	font-variant: small-caps;
+}
+
+ul.css_topbar {
+	list-style-type: none;
+	margin-left: 5px;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+
+ul.css_topbar li {
+	display: inline;
+}
+
+ul.css_topbar a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a {
+	border-bottom: 1px solid #000000;
+}
+
+li a:hover {
+	background-color: #555;
+	color: white;
+}
+
+div.text_dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+div.text_dropdown_content {
+	display: none;
+	position: absolute;
+	background-color: #FF8C00;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+}
+
+div.text_dropdown:hover div.text_dropdown_content {
+	display: block;
+}
+
+/* _____________________________________________________ */
+button.ul_dropdown_btn {
+	width: 130px;
+	height: 70px;
+	border: none;
+	font-size: 24px;
+	color: white;
+	background-color: #FFA500;
+}
+
+div.ul_dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+div.ul_dropdown_content {
+	display: none;
+	background-color: #FF8C00;
+	min-width: 120px;
+	position: absolute;
+}
+
+div.ul_dropdown_content a {
+	text-decoration: none;
+	color: whitesmoke;
+	text-align: center;
+	padding: 5px 10px;
+	background-color: #FF8C00;
+	display: block;
+}
+
+button.ul_dropdown_btn:hover {
+	background-color: cadetblue;
+}
+
+div.ul_dropdown_content a:hover {
+	background-color: darksalmon;
+}
+
+div.ul_dropdown:hover div.ul_dropdown_content {
+	display: block;
+}
+/* ---------------------------------------------------- */
