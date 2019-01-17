@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: #FF8C00;
+	font-size: 24px;
+}
+
+
+div.css3-border {
+	border: 2px solid #00FF00;
+	padding: 10px 40px;
+	margin: 10px;
+	width: 300px;
+	/* CSS3的圆角边框 */
+	border-radius: 15px;
+	/* CSS3盒子阴影 */
+	box-shadow: 10px 10px 15px #00FF00;
+	/* CSS3边界图片 */
+	border-image: url(../img/border.png) 30 30 round;
+	-moz-border-image: url(../img/border.jpg) 30 30 round;
+}
+
+p#rcorners1 {
+	width: 300px;
+	height: 300px;
+	border-radius: 10px 25px 40px 55px;
+	padding: 30px;
+	background-color: #4CAF50;
+}
+
+p#rcorners2 {
+	border-radius: 25px;
+	width: 300px;
+	padding: 30px;
+	height: 300px;
+	border-radius: 70px 85px 100px 115px;
+	border: 2px solid #00BFFF;
+}
+
+p#rcorners3 {
+	border-radius: 25px;
+	background: url(../img/demo4.jpg);
+	background-position: left top;
+	background-repeat: repeat;
+	padding: 40px;
+	width: 300px;
+	border-radius: 130px 145px 160px 175px;
+	height: 300px;
+}
+
+#example1 {
+	background: url(../img/bg.jpg) right bottom no-repeat, url(../img/demo1.jpg) left top repeat;
+	padding: 15px;
+}
+
+div.more_picture {
+	background-image: url(../img/bg.jpg), url(../img/demo3.jpg);
+	background-position: right bottom, left top;
+	background-repeat: no-repeat, repeat;
+	padding: 15px;
+}
+
+div.liner_grad {
+	height: 200px;
+	background: linear-gradient(blue, red, yellow);
+	background: -webkit-linear-gradient(blue, red, yellow);
+	background: -moz-linear-gradient(blue, red, yellow);
+}
+
+div.liner_grad span {
+	color: white;
+	font-size: 24px;
+}
+
+div.radial_grad {
+	height: 200px;
+	background: radial-gradient(blue, red, yellow);
+	background: -webkit-radial-gradient(blue, red, yellow);
+	background: -moz-radial-gradient(blue, red, yellow);
+}
+
+div.radial_grad span {
+	color: white;
+	font-size: 24px;
+}
+
+span.txt_shodow {
+	font-size: 24px;
+	color: #555555;
+	text-shadow: 5px 5px 5px #FF00FF;
+}
+
+span.box_shodow {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+div.container {
+	padding: 10px;
+}
+
+div.header {
+	background-color: #4CAF50;
+	color: white;
+	height: 100px;
+	padding: 10px;
+	font-size: 40px;
+}
+
+div.card {
+	width: 250px;
+	margin-left: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+div.header h1{
+	font-size: 50px;
+}
