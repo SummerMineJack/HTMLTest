@@ -100,24 +100,144 @@ span.box_shodow {
 	box-shadow: 10px 10px 5px #888888;
 }
 
-div.container {
-	padding: 10px;
+div.card {
+	width: 250px;
+	text-align: center;
+	margin: 40px;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.header {
-	background-color: #4CAF50;
+	background-color: #00FF00;
 	color: white;
-	height: 100px;
-	padding: 10px;
 	font-size: 40px;
+	padding: 10px;
 }
 
-div.card {
-	width: 250px;
-	margin-left: 50px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+div.container {
 	text-align: center;
+	padding: 25px;
 }
-div.header h1{
-	font-size: 50px;
+
+@font-face {
+	font-family: myCustromFonts;
+	src: url(../fonts/harlowsi.ttf);
+}
+
+div.custormZiti {
+	font-family: myCustromFonts;
+	font-size: 24px;
+}
+
+div.rotate_css {
+	width: 100px;
+	height: 100px;
+	background-color: #00BFFF;
+	margin: 30px;
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+}
+
+div.rotate_css:hover {
+	transform: rotate(180deg);
+}
+
+div.translate_css {
+	width: 100px;
+	height: 100px;
+	margin: 30px;
+	background-color: #00BFFF;
+	transform: translate(100px, 0);
+}
+
+div.scale_css {
+	width: 100px;
+	height: 100px;
+	margin: 30px;
+	margin: 120px;
+	background-color: #00BFFF;
+	transform: scale(2, 3);
+}
+
+div.skew_css {
+	width: 300px;
+	height: 300px;
+	background-color: #00FF00;
+	margin: 100px;
+	transform: skew(10deg, 10deg);
+}
+
+div.matrix_css {
+	width: 500px;
+	height: 500px;
+	background-color: #4CAF50;
+	margin: 100px;
+	transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+}
+
+div.css3_3d_rotateX {
+	width: 300px;
+	height: 300px;
+	background-color: #5F9EA0;
+	transform: rotateX(120deg);
+}
+
+div.css3_guodu {
+	margin: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+div.css3_guodu:hover {
+	width: 400px;
+	height: 300px;
+	transform: rotate(180deg);
+}
+
+div.css3_donghua {
+	width: 100px;
+	height: 100px;
+	background-color: #D2691E;
+}
+
+div.css3_donghua:hover {
+	animation: custormDonghua 5s;
+}
+
+@keyframes custormDonghua {
+	0% {
+		background: red;
+	}
+
+	25% {
+		background: yellow;
+	}
+
+	50% {
+		background: blue;
+	}
+
+	100% {
+		background: green;
+	}
+}
+
+@-webkit-keyframes name {
+	0% {
+		background: red;
+	}
+
+	25% {
+		background: yellow;
+	}
+
+	50% {
+		background: blue;
+	}
+
+	100% {
+		background: green;
+	}
 }
