@@ -1,6 +1,5 @@
 body {
-	margin: 0;
-	padding: 0;
+	margin: 25px;
 }
 
 h1 {
@@ -203,41 +202,279 @@ div.css3_donghua {
 }
 
 div.css3_donghua:hover {
-	animation: custormDonghua 5s;
+	animation-name: custormDonghua;
+	position: relative;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
 }
 
 @keyframes custormDonghua {
 	0% {
 		background: red;
+		left: 0px;
+		top: 0px;
 	}
 
 	25% {
 		background: yellow;
+		left: 200px;
+		top: 0px;
 	}
 
 	50% {
 		background: blue;
+		left: 200px;
+		top: 200px;
+	}
+
+	75% {
+		background: gray;
+		left: 0px;
+		top: 200px;
 	}
 
 	100% {
 		background: green;
+		left: 0px;
+		top: 0px;
 	}
 }
 
-@-webkit-keyframes name {
+@-webkit-keyframes custormDonghua {
 	0% {
 		background: red;
+		left: 0px;
+		top: 0px;
 	}
 
 	25% {
 		background: yellow;
+		left: 200px;
+		top: 0px;
 	}
 
 	50% {
 		background: blue;
+		left: 200px;
+		top: 200px;
+	}
+
+	75% {
+		background: gray;
+		left: 0px;
+		top: 200px;
 	}
 
 	100% {
 		background: green;
+		left: 0px;
+		top: 0px;
 	}
+}
+
+div.clonum_count {
+	column-count: 4;
+	column-gap: 50px;
+	column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: #00BFFF;
+	-webkit-column-rule-color: #0000FF;
+	-webkit-column-rule-width: 1px;
+	-webkit-column-rule-style: solid;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 50px;
+}
+
+div.css3_screen {
+	width: 100px;
+	overflow: auto;
+	margin-bottom: 100px;
+	height: 100px;
+	margin-left: 30px;
+	background-color: #00FF00;
+	border: 2px solid #555555;
+	padding: 10px;
+	resize: both;
+}
+
+div.contanise {
+	width: 30em;
+	margin-left: 100px;
+	border: 1em solid #000000;
+	background-color: #000000;
+}
+
+div.box {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 50%;
+	border: 1em solid red;
+	float: left;
+}
+
+div.css3_outline_border {
+	margin: 50px;
+	width: 100px;
+	height: 100px;
+	background-color: #00BFFF;
+	border: 2px solid #5F9EA0;
+	outline: 2px solid red;
+	outline-offset: 15px;
+}
+
+.css3_picture {
+	max-width: 100%;
+	height: auto;
+	opacity: 0.5;
+	-webkit-opacity: 0.5;
+}
+
+.css3_picture_link {
+	border: 1px solid gray;
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+	transition: 0.5s;
+}
+
+a.css3_picture_link:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+div.topleft {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+div.topright {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+div.bottomleft {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+}
+
+div.bottomright {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+div.center {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+
+div.contanise4image {
+	width: 80%;
+	background-color: whitesmoke;
+	/* filter: blur(5px);//高斯模糊 */
+	/* filter: brightness(60%);//明暗度 */
+	/* filter: contrast(30%); //对比度 */
+	/* filter: drop-shadow(10px 10px 3px );//设置阴影效果 */
+	/* filter: grayscale(100%);//设置灰度效果 */
+	/* filter: hue-rotate(90deg);//色相旋转 */
+	/* filter: invert(100%);//翻转图片,类似负片 */
+	/* filter: opacity(30%); //透明度 */
+	/* filter: saturate(30%);//饱和度 */
+	/* filter: sepia(75%);//转换成褐色程度 */
+	margin: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.contanise4Content {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+/* ---------------------------------------------------- */
+div.gallery {
+	padding: 0 6px;
+	float: left;
+	width: 24.999999%;
+}
+
+div.gallery_imgs {
+	border: 1px solid gray;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery_imgs:hover {
+	border: 1px solid #000000;
+}
+
+div.gallery_imgs img {
+	width: 100%;
+	height: auto;
+}
+
+div.Content {
+	text-align: center;
+	padding: 10px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+button.css3_btn {
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	background-color: #4CAF50;
+	border: 1px solid #4CAF50;
+	border-radius: 5px;
+	font-size: 22px;
+	color: white;
+	display: inline-block;
+	/* cursor: not-allowed;//按钮禁用 */
+	transition-duration: 0.5s;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+button.css3_btn:hover {
+	background-color: white;
+	color: #000000;
+	
+}
+
+button.css3_btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+button.css3_btn span:after {
+	content: ">>";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
 }
