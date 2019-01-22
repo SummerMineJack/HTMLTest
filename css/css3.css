@@ -460,7 +460,7 @@ button.css3_btn {
 button.css3_btn:hover {
 	background-color: white;
 	color: #000000;
-	
+
 }
 
 button.css3_btn span {
@@ -477,4 +477,66 @@ button.css3_btn span:after {
 	top: 0;
 	right: -20px;
 	transition: 0.5s;
+}
+
+div.css3_fenye_div {
+	text-align: center;
+}
+
+ul.css3_fenye {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.css3_fenye li {
+	display: inline;
+}
+
+ul.css3_fenye li a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	border: 1px solid gray;
+	margin: 0 4px;
+	font-size: 24px;
+}
+
+ul.css3_fenye li a:hover {
+	background-color: #00FF00;
+	color: white;
+}
+
+ul.css3_fenye li a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+ul.css3_fenye li:first-child a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+ul.css3_fenye li:last-child a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+ul.css3_fenye li a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+div.css3_div_size {
+	width: 300px;
+	height: 100px;
+	border: 1px solid red;
+}
+
+div.css3_div_size_padding {
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid red;
 }
